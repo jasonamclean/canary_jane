@@ -1,0 +1,25 @@
+body {
+	background-color: #fcf892;
+}
+
+#navbar {
+	list-style-type: none;
+	display: inline;
+}
+
+li {
+	float: left;
+	padding: 15px;
+}
+
+.container {
+	width: 100%;
+	display: block;
+	
+}
+
+.header_img {
+	width: 100%;
+	height: 400px;
+}
+
