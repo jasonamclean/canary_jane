@@ -1,9 +1,33 @@
-<ul id="navbar">
-	<li><%= link_to "Home", root_path %></li>
-	<li><%= link_to "About Me", about_me_path %></li>
-	<li><%= link_to "Contact", contact_path %></li>
-	<li><%= link_to "Portfolio", portfolio_path %></li>
-	<li><%= link_to "Free Printables", free_printables_path %></li>
-	<li><%= link_to "Press", press_path %></li>
-	<li><%= link_to "Shop", shop_path %></li>
-</ul>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	    </button>
+    	<a class="navbar-brand" href="/">Canary Jane</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><%= link_to "About", about_me_path %><span class="sr-only">(current)</span></li>
+				<li class="active"><%= link_to "Contact", contact_path %><span class="sr-only">(current)</span></li>
+				<li class="active"><%= link_to "Portfolio", portfolio_path %><span class="sr-only">(current)</span></li>
+				<li class="active"><%= link_to "Free Printables", free_printables_path %><span class="sr-only">(current)</span></li>
+				<li class="active"><%= link_to "Press", press_path %><span class="sr-only">(current)</span></li>
+				<li class="active"><%= link_to "Shop", shop_path %><span class="sr-only">(current)</span></li>
+				<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Admin Access</a></li>
+			</ul>
+		</div>
+
+	</div>
+</nav>
+
+<div id="header_image">
+	<%= image_tag("CanaryJaneHeader.jpg", width: '100%') %>
+</div>
