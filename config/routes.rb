@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
   get 'shop', to: 'pages#shop'
 
-  root 'pages#home'
+  root 'posts#index'
 
 end
 

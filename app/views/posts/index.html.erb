@@ -1,0 +1,17 @@
+<div class="container">
+	<h1>Posts Home</h1>
+
+	<%= link_to 'Create Post', new_post_path %>
+
+	<hr>
+
+	<% @posts.each do |post| %>
+		<p><%= link_to post.title, post_path(post) %></p>
+
+		<p>Posted: <%= time_ago_in_words(post.created_at) %> ago, on <%= post.created_at.strftime("%b %d, %Y") %></p>
+
+		<%= post.body %>
+		<hr>
+
+	<% end %>
+</div>
